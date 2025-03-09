@@ -1,3 +1,4 @@
+import { Providers } from "@/components/Providers";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -26,7 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(geistSans.variable, geistMono.variable, "antialiased min-h-screen ")}>
-        <main className="h-screen dark text-foreground bg-background">{children}</main>
+        <Providers>
+          <main className="h-screen dark text-foreground bg-background">{children}</main>
+        </Providers>
       </body>
     </html>
   );
