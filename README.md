@@ -48,6 +48,7 @@ Crea un archivo `.env.local` en la raíz del proyecto con las siguientes variabl
 ```
 # API Keys
 GROQ_API_KEY=tu_clave_api_de_groq
+OPENAI_API_KEY=tu_clave_api_de_groq
 UPSTASH_REDIS_REST_URL=tu_url_de_upstash_redis
 UPSTASH_REDIS_REST_TOKEN=tu_token_de_upstash_redis
 ```
