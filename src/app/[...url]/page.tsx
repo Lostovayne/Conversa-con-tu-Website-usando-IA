@@ -3,9 +3,9 @@ import { ragChat } from "../lib/rag-chat";
 import { redis } from "../lib/redis";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     url: string | string[] | undefined;
-  };
+  }>;
 }
 
 function reconstructUrl({ url }: { url: string[] }) {
